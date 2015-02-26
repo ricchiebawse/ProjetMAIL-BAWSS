@@ -21,8 +21,7 @@ public class testLigue1 {
         Ligue1.getInstance().getListEquipes().add(equipe2);
         Ligue1.getInstance().getListEquipes().add(equipe1);
 
-       assertEquals(Ligue1.getInstance().toString(),"Ligue1 [journee=0, prevChamion=null, listEquipes=[Equipe [nom=OL, listJoueurs=[], championnat=null], Equipe [nom=OM, listJoueurs=[], championnat=null], Equipe [nom=PSG, listJoueurs=[], championnat=null]]]");
-
+       assertEquals(Ligue1.getInstance().toString(),"Ligue1 [journee=0, prevChamion=null, listEquipes=[Equipe [nom=OL, listJoueurs=[], championnat=null], Equipe [nom=OM, listJoueurs=[], championnat=null], Equipe [nom=PSG, listJoueurs=[], championnat=null]], listMatchs=[]]");
         
 	}
 	

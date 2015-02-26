@@ -10,11 +10,14 @@ public class Ligue1 {
 	private int journee;
 	private Equipe prevChamion;
 	private List<Equipe> listEquipes;
+	private List<Match> listMatchs;
 	
 	private Ligue1(){
 		super();
 		this.journee=0;
 		this.listEquipes=new ArrayList<Equipe>();
+		this.listMatchs=new ArrayList<Match>();
+
 	}
 	
 	private Ligue1(Equipe prevChampion){
@@ -22,6 +25,7 @@ public class Ligue1 {
 		this.prevChamion=prevChampion;
 		this.journee=0;
 		this.listEquipes=new ArrayList<Equipe>();
+		this.listMatchs=new ArrayList<Match>();
 	}
 	
     public final static Ligue1 getInstance() {
@@ -82,13 +86,33 @@ public class Ligue1 {
 	}
 
 
+
+	/**
+	 * @return the listMatchs
+	 */
+	public List<Match> getListMatchs() {
+		return listMatchs;
+	}
+
+	/**
+	 * @param listMatchs the listMatchs to set
+	 */
+	public void setListMatchs(List<Match> listMatchs) {
+		this.listMatchs = listMatchs;
+	}
+	
+	public void addMatch(Match m){
+		this.listMatchs.add(m);
+	}
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
 		return "Ligue1 [journee=" + journee + ", prevChamion=" + prevChamion
-				+ ", listEquipes=" + listEquipes + "]";
+				+ ", listEquipes=" + listEquipes + ", listMatchs=" + listMatchs
+				+ "]";
 	}
 	
 	
