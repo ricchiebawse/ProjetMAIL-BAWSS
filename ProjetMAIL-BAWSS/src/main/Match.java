@@ -7,7 +7,6 @@ public class Match {
 	private int scoreDomicile;
 	private int scoreExterieur;
 	
-	
 	public Match(Equipe equipe1, Equipe equipe2, int scoreDomicile, int scoreExterieur){
 		this.equipeDomicile=equipe1;
 		this.equipeExterieur=equipe2;
